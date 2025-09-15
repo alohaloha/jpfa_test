@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一般社団法人 日本電動車椅子サッカー協会</title>
+    <style>
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #2c5aa0;
+            color: white;
+            padding: 1rem 0;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .emergency-notice {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            color: #856404;
+            text-align: center;
+            font-weight: bold;
+        }
+        .news-section {
+            padding: 3rem 0;
+            background-color: #f8f9fa;
+        }
+        .news-item {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .news-item:hover {
+            transform: translateY(-2px);
+        }
+        .news-date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .news-title {
+            font-weight: bold;
+            color: #2c5aa0;
+        }
+        .section {
+            padding: 3rem 0;
+        }
+        .section h2 {
+            color: #2c5aa0;
+            border-bottom: 3px solid #2c5aa0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .section h3 {
+            color: #2c5aa0;
+            margin-top: 2rem;
+        }
+        .sponsors-section {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+        }
+        .sponsor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .sponsor-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .contact-info {
+            background-color: #e9ecef;
+            padding: 3rem 0;
+        }
+        .contact-button {
+            background-color: #2c5aa0;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .contact-button:hover {
+            background-color: #1e3c72;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul li {
+                margin: 0.5rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">JPFA - 日本電動車椅子サッカー協会</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">ホーム</a></li>
+                        <li><a href="#about">JPFAについて</a></li>
+                        <li><a href="#news">最新ニュース</a></li>
+                        <li><a href="#sponsors">スポンサー</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>一般社団法人 日本電動車椅子サッカー協会</h1>
+            <p>電動車椅子サッカーの普及・発展を目指して</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="emergency-notice">
+            🚨 【緊急お知らせ】 サイトメンテナンス中のため、一時的にこちらのページで情報を提供しております。
+        </div>
+    </div>
+
+    <section class="news-section" id="news">
+        <div class="container">
+            <h2>📰 最新ニュース</h2>
+            
+            <!-- ニュース項目 - 新しいニュースはここに追加 -->
+            <div class="news-item">
+                <div class="news-date">● 2025.09.10</div>
+                <div class="news-title">重要なお知らせ</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">● 2025.08.29</div>
+                <div class="news-title">APOカップ出場の寄付金募集について</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">● 2025.08.25</div>
+                <div class="news-title">第９回パワーチェアーフットボールチャンピオンシップジャパン２０２５パンフレット</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">● 2025.08.25</div>
+                <div class="news-title">【ASIA PACIFIC OCEANIA ZONE 2025 Powerchair Football Championship】日本代表合宿における協力選手依頼について</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">● 2025.08.21</div>
+                <div class="news-title">第９回パワーチェアーフットボールチャンピオンシップジャパン２０２５ フライヤー掲載</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">● 2025.07.30</div>
+                <div class="news-title">夏季大会関連情報</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <h2>🏢 JPFAについて</h2>
+            <p>一般社団法人日本電動車椅子サッカー協会は、電動車椅子サッカーの普及・発展を目的として設立された団体です。</p>
+            
+            <h3>協会概要</h3>
+            <p><strong>会長：</strong> 吉野 忠則</p>
+            
+            <h3>活動内容</h3>
+            <ul>
+                <li>電動車椅子サッカーの普及活動</li>
+                <li>各種大会・チャンピオンシップの開催</li>
+                <li>選手の育成・強化</li>
+                <li>国際大会への派遣</li>
+                <li>審判・指導者の育成</li>
+                <li>地域クラブとの連携</li>
+            </ul>
+            
+            <h3>沿革</h3>
+            <p>電動車椅子サッカーの競技団体として、国内外での競技発展に貢献しています。</p>
+        </div>
+    </section>
+
+    <section class="sponsors-section" id="sponsors">
+        <div class="container">
+            <h2>🤝 スポンサー・パートナー</h2>
+            <p>JPFAの活動は多くの企業・団体様のご支援により運営されています。</p>
+            
+            <!-- スポンサー情報 - 必要に応じて追加・編集 -->
+            <div class="sponsor-grid">
+                <div class="sponsor-item">
+                    <h4>メインスポンサー</h4>
+                    <p>企業ロゴ・名称をここに追加</p>
+                </div>
+                <div class="sponsor-item">
+                    <h4>協賛企業</h4>
+                    <p>企業ロゴ・名称をここに追加</p>
+                </div>
+                <div class="sponsor-item">
+                    <h4>特別協力</h4>
+                    <p>団体名称をここに追加</p>
+                </div>
+                <div class="sponsor-item">
+                    <h4>後援</h4>
+                    <p>自治体・団体名をここに追加</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem; padding: 1.5rem; background: white; border-radius: 8px;">
+                <h4>スポンサー募集中</h4>
+                <p>電動車椅子サッカーの発展にご協力いただけるスポンサー様を募集しております。詳しくはお問い合わせください。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info" id="contact">
+        <div class="container">
+            <h2>📞 お問い合わせ</h2>
+            <p>緊急時・一般的なお問い合わせは下記Googleフォームをご利用ください：</p>
+            
+            <div style="text-align: center; margin: 2rem 0;">
+                <a href="#" class="contact-button" id="contact-form-link">📝 お問い合わせフォーム</a>
+            </div>
+            
+            <div style="background: white; padding: 2rem; border-radius: 8px; margin-top: 2rem;">
+                <h3>🚨 緊急時の連絡先</h3>
+                <p><strong>大会当日など緊急性の高いご連絡：</strong></p>
+                <p>📞 TEL: XXX-XXXX-XXXX（担当：○○）</p>
+                <p>🕒 対応時間: 平日 9:00-17:00</p>
+                
+                <h4>お問い合わせ内容例</h4>
+                <ul>
+                    <li>大会・イベントに関するお問い合わせ</li>
+                    <li>入会・チーム登録について</li>
+                    <li>スポンサー・協賛について</li>
+                    <li>取材・メディア関連</li>
+                    <li>その他一般的なお問い合わせ</li>
+                </ul>
+            </div>
+            
+            <p style="margin-top: 2rem; font-size: 0.9rem; color: #666; text-align: center;">
+                ※ 通常時のお問い合わせ先等の詳細情報は、メンテナンス完了後に復旧いたします。<br>
+                ※ 回答まで3営業日程度お時間をいただく場合があります。
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>一般社団法人 日本電動車椅子サッカー協会</h3>
+            <p>&copy; 2025 Japan Powerchair Football Association (JPFA). All rights reserved.</p>
+            <p><strong>本サイトは緊急時の暫定措置として設置されております。</strong></p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">
+                正式サイト復旧まで今しばらくお待ちください。ご不便をおかけして申し訳ございません。
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Googleフォームのリンクを設定する場合は、下記のURLを実際のフォームURLに変更
+        document.getElementById('contact-form-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            // 実際のGoogleフォームURLをここに設定
+            alert('Googleフォームを設定してください。詳細は GOOGLE_FORM_SETUP.md をご参照ください。');
+        });
+        
+        // スムーススクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
